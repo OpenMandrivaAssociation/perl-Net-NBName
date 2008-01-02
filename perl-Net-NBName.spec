@@ -16,6 +16,7 @@ Patch0:		Net-NBName-0.25-shellbang.diff
 BuildRequires:	perl-devel
 %endif
 BuildArch:	noarch
+BuildRoot:	%{_tmppath}/%{name}-%{version}
 
 %description
 Net::NBName is a class that allows you to perform simple NetBIOS Name
