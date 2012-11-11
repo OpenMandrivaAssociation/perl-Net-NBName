@@ -1,0 +1,27 @@
+diff -Naur Net-NBName-0.25/bin/namequery.pl Net-NBName-0.25.oden/bin/namequery.pl
+--- Net-NBName-0.25/bin/namequery.pl	2006-01-29 20:56:56.000000000 +0100
++++ Net-NBName-0.25.oden/bin/namequery.pl	2006-01-29 20:56:31.000000000 +0100
+@@ -1,3 +1,5 @@
++#!/usr/bin/perl
++
+ use strict;
+ use Net::NBName;
+ 
+diff -Naur Net-NBName-0.25/bin/nodescan.pl Net-NBName-0.25.oden/bin/nodescan.pl
+--- Net-NBName-0.25/bin/nodescan.pl	2006-01-29 20:56:56.000000000 +0100
++++ Net-NBName-0.25.oden/bin/nodescan.pl	2006-01-29 20:56:39.000000000 +0100
+@@ -1,3 +1,5 @@
++#!/usr/bin/perl
++
+ use Net::NBName;
+ use Net::Netmask;
+ 
+diff -Naur Net-NBName-0.25/bin/nodestat.pl Net-NBName-0.25.oden/bin/nodestat.pl
+--- Net-NBName-0.25/bin/nodestat.pl	2006-01-29 20:56:56.000000000 +0100
++++ Net-NBName-0.25.oden/bin/nodestat.pl	2006-01-29 20:56:45.000000000 +0100
+@@ -1,3 +1,5 @@
++#!/usr/bin/perl
++
+ use Net::NBName;
+ 
+ my $nb = Net::NBName->new;
