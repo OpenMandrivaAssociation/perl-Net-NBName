@@ -8,7 +8,7 @@ Release:	4
 Summary:	NetBIOS Name Service Requests
 License:	GPL+ or Artistic
 Group:		Development/Perl
-Url:		http://search.cpan.org/dist/%{upstream_name}
+Url:		https://search.cpan.org/dist/%{upstream_name}
 Source0:	http://www.cpan.org/modules/by-module/Net/%{upstream_name}-%{upstream_version}.tar.bz2
 Patch0:		Net-NBName-0.25-shellbang.diff
 
