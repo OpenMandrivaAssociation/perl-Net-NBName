@@ -2,14 +2,14 @@
 %define upstream_version 0.26
 
 Name:		perl-%{upstream_name}
-Version:	%perl_convert_version %{upstream_version}
-Release:	4
+Version:	%{upstream_version}
+Release:	5
 
 Summary:	NetBIOS Name Service Requests
 License:	GPL+ or Artistic
 Group:		Development/Perl
-Url:		https://search.cpan.org/dist/%{upstream_name}
-Source0:	http://www.cpan.org/modules/by-module/Net/%{upstream_name}-%{upstream_version}.tar.bz2
+Url:		https://metacpan.org/dist/Net-NBName
+Source0:	https://cpan.metacpan.org/authors/id/J/JM/JMACFARLA/Net-NBName-%{upstream_version}.tar.gz
 Patch0:		Net-NBName-0.25-shellbang.diff
 
 BuildRequires:	make
