@@ -1,15 +1,13 @@
 %define upstream_name	 Net-NBName
-%define upstream_version 0.26
-
 Name:		perl-%{upstream_name}
-Version:	%{upstream_version}
-Release:	5
+Version:	0.26
+Release:	6
 
 Summary:	NetBIOS Name Service Requests
 License:	GPL+ or Artistic
 Group:		Development/Perl
 Url:		https://metacpan.org/dist/Net-NBName
-Source0:	https://cpan.metacpan.org/authors/id/J/JM/JMACFARLA/Net-NBName-%{upstream_version}.tar.gz
+Source0:	https://cpan.metacpan.org/authors/id/J/JM/JMACFARLA/Net-NBName-%{version}.tar.gz
 Patch0:		Net-NBName-0.25-shellbang.diff
 
 BuildRequires:	make
@@ -22,7 +20,7 @@ Service Requests in your Perl code. It performs these NetBIOS operations over
 TCP/IP using Perl's built-in socket support.
 
 %prep
-%setup -q -n %{upstream_name}-%{upstream_version}
+%setup -q -n %{upstream_name}-%{version}
 perl -pi -e 's/\r\n$/\n/' bin/* README Changes
 %patch0 -p1
 
@@ -48,9 +46,7 @@ make test
 %changelog
 * Wed Jul 29 2009 JÃ©rÃ´me Quelin <jquelin@mandriva.org> 0.260.0-1mdv2010.0
 + Revision: 404099
-- rebuild using %%perl_convert_version
-
-* Wed Jul 23 2008 Thierry Vignaud <tv@mandriva.org> 0.26-3mdv2009.0
+- rebuild using %0.26 Wed Jul 23 2008 Thierry Vignaud <tv@mandriva.org> 0.26-3mdv2009.0
 + Revision: 241786
 - rebuild
 - kill re-definition of %%buildroot on Pixel's request
